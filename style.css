@@ -41,13 +41,13 @@ body.prank {
 
 
 #foto {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 0px;
+  left: auto;
   width: 100vw;
   height: 100vh;
   max-width: 70vh;
-  left: 100px;
+  align-items: center;
   object-fit: cover;
   opacity: 0;
   transform: scale(1.02);
