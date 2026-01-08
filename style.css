@@ -44,9 +44,10 @@ body.prank {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
-  left: 150px;
+  max-width: 70vh;
+  left: 400px;
   object-fit: cover;
   opacity: 0;
   transform: scale(1.02);
