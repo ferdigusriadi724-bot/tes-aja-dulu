@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaget gak?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="prank">
+
+  <!-- layar hitam -->
+  <div id="black"></div>
+
+  <!-- gambar jumpscare -->
+  <img src="jokowi.jpeg" id="foto" alt="jumpscare">
+
+  <!-- audio -->
+  <audio id="suara" preload="auto">
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById("suara");
+    const foto  = document.getElementById("foto");
+    const black = document.getElementById("black");
+
+    // mainkan audio (masih dalam chain klik)
+    audio.play().catch(() => {
+      // kalau browser rewel, tetap lanjut visual
+    });
+
+    // SAMAKAN DENGAN JEDA AUDIO
+    const DELAY = 300; // 🔧 atur sesuai sound kamu
+
+    setTimeout(() => {
+      black.style.display = "none";
+      foto.classList.add("show");
+    }, DELAY);
+  </script>
+
+</body>
+</html>

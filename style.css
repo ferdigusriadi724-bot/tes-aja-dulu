@@ -1,0 +1,59 @@
+/* =====================
+   WEB 1
+===================== */
+body.start {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* =====================
+   WEB 2 (PRANK)
+===================== */
+body.prank {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+/* layar hitam */
+#black {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 10;
+}
+
+/* gambar jumpscare */
+#foto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.05s ease, transform 0.05s ease;
+}
+
+/* saat muncul */
+#foto.show {
+  opacity: 1;
+  transform: scale(1);
+}
