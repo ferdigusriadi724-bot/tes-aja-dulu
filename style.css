@@ -39,13 +39,14 @@ body.prank {
   z-index: 10;
 }
 
-/* gambar jumpscare */
+
 #foto {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
+  left: 150px;
   object-fit: cover;
   opacity: 0;
   transform: scale(1.02);

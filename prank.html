@@ -12,11 +12,11 @@
   <div id="black"></div>
 
   <!-- gambar jumpscare -->
-  <img src="jokowi.jpeg" id="foto" alt="jumpscare">
+  <img src="HororImage.jpeg" id="foto" alt="jumpscare">
 
   <!-- audio -->
   <audio id="suara" preload="auto">
-    <source src="sound.mp3" type="audio/mpeg">
+    <source src="HororSound.mp3" type="audio/mpeg">
   </audio>
 
   <script>
@@ -24,13 +24,10 @@
     const foto  = document.getElementById("foto");
     const black = document.getElementById("black");
 
-    // mainkan audio (masih dalam chain klik)
     audio.play().catch(() => {
-      // kalau browser rewel, tetap lanjut visual
     });
 
-    // SAMAKAN DENGAN JEDA AUDIO
-    const DELAY = 300; // 🔧 atur sesuai sound kamu
+    const DELAY = 2000; // 🔧 atur sesuai sound kamu
 
     setTimeout(() => {
       black.style.display = "none";
